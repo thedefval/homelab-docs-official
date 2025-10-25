@@ -113,31 +113,31 @@ cp ~/homelab-docs/templates/initial-* ~/homelab-docs/progress/
 │   ├── hamradio/
 │   └── projects/
 ├── refined/                     # Polished documentation
-│   ├── reference/              # Personal reference docs
-│   ├── tutorial/               # Tutorial-style posts
-│   └── deepdive/               # Technical deep-dives
+│   ├── reference/                # Personal reference docs
+│   ├── tutorial/                 # Tutorial-style posts
+│   └── deepdive/                 # Technical deep-dives
 ├── screenshots/                 # Organized screenshots
 │   ├── [track]/[yyyy-mm-dd]/
 │   └── thumbnails/
 ├── progress/                    # Progress tracking
-│   ├── xp-log.txt              # XP transaction log
-│   ├── achievements.txt        # Unlocked achievements
-│   ├── dashboard.md            # Visual progress dashboard
-│   └── streak-tracker.txt      # Documentation streaks
+│   ├── xp-log.txt                # XP transaction log
+│   ├── achievements.txt          # Unlocked achievements
+│   ├── dashboard.md              # Visual progress dashboard
+│   └── streak-tracker.txt        # Documentation streaks
 ├── templates/                   # Document templates
 │   ├── quick-capture.md
 │   ├── refinement-reference.md
 │   ├── refinement-tutorial.md
 │   └── refinement-deepdive.md
 ├── scripts/                     # CLI tools
-│   ├── install.sh              # System installer
-│   ├── labquick.sh             # Quick capture tool
-│   ├── labrefine.sh            # Refinement tool
-│   ├── labscreen.sh            # Screenshot organizer
-│   └── labprogress.sh          # Progress viewer
+│   ├── install.sh                # System installer
+│   ├── labquick.sh               # Quick capture tool
+│   ├── labrefine.sh              # Refinement tool
+│   ├── labscreen.sh              # Screenshot organizer
+│   └── labprogress.sh            # Progress viewer
 ├── git-hooks/                   # Git automation
-│   ├── post-commit             # Auto XP calculation
-│   └── pre-push                # Pre-push validation
+│   ├── post-commit               # Auto XP calculation
+│   └── pre-push                  # Pre-push validation
 └── achievements/                # Achievement definitions
     └── achievements.json
 ```
@@ -447,11 +447,11 @@ Individual files can be viewed directly:
 https://github.com/yourusername/homelab-docs/blob/main/refined/reference/ospf-configuration.md
 ```
 
-## 📸 Screenshot Workflow
+## Screenshot Workflow
 
 ### Taking Screenshots
 
-**Recommended: Flameshot** (Linux)
+**Optional: Flameshot** (Linux)
 
 ```bash
 # Install Flameshot
@@ -504,7 +504,7 @@ The routing table shows all routes:
 1. **Capture as you go**: Don't wait until the end
 2. **Annotate immediately**: Add arrows, boxes, text while fresh
 3. **Blur sensitive info**: Passwords, IPs, hostnames
-4. **Descriptive filenames**: Flameshot allows custom names
+4. **Descriptive filenames**: Use custom names
 5. **Organize daily**: Run `labscreen` after each session
 
 ## Troubleshooting
@@ -584,7 +584,7 @@ chmod +x ~/.local/bin/lab*
 **Solution**:
 ```bash
 # Check if screenshots exist
-ls ~/Pictures/*.png
+ls ~/Pictures/Screenshots/*.png
 
 # Check if target directory exists
 ls screenshots/[track]/
@@ -592,7 +592,7 @@ ls screenshots/[track]/
 # Run with verbose output
 bash -x ~/.local/bin/labscreen.sh "CCNA" "2025-10-24"
 
-# Verify Flameshot is saving to ~/Pictures
+# Verify Flameshot is saving to ~/Pictures/Screenshots
 flameshot config
 ```
 
@@ -629,11 +629,14 @@ All templates are in `templates/` directory:
 
 All scripts are in `scripts/` directory:
 - `install.sh` - Full system installer
-- `labquick.sh` - Quick capture creation
-- `labrefine.sh` - Refinement wizard
-- `labscreen.sh` - Screenshot organizer
-- `labprogress.sh` - Progress viewer
 - `calculate-xp.py` - XP calculator (auto-run by Git hooks)
+
+### CLI Commands
+ All CLI commands are in `~/.local/bin`
+- `labquick` - Quick capture creation
+- `labrefine` - Refinement wizard
+- `labscreen` - Screenshot organizer
+- `labprogress` - Progress viewer
 
 ### Git Hooks
 
