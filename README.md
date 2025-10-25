@@ -32,7 +32,7 @@ This system supports your certification studies (CCNA, CCIE, AWS CSA Pro, Ham Ra
 ```bash
 # Clone your repository
 git clone git@github.com:thedefval/homelab-docs-official.git
-cd homelab-doc-officials
+cd homelab-docs-official
 
 # Run the installer
 chmod +x scripts/install.sh
