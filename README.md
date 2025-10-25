@@ -31,8 +31,8 @@ This system supports your certification studies (CCNA, CCIE, AWS CSA Pro, Ham Ra
 
 ```bash
 # Clone your repository
-git clone git@github.com:yourusername/homelab-docs.git
-cd homelab-docs
+git clone git@github.com:thedefval/homelab-docs-official.git
+cd homelab-doc-officials
 
 # Run the installer
 chmod +x scripts/install.sh
@@ -62,7 +62,7 @@ cat progress/dashboard.md
 
 ```bash
 # Download the installer
-wget https://raw.githubusercontent.com/yourusername/homelab-docs/main/scripts/install.sh
+wget https://raw.githubusercontent.com/thedefval/homelab-docs-official/main/scripts/install.sh
 
 # Make it executable
 chmod +x install.sh
@@ -86,7 +86,7 @@ The installer will:
 mkdir -p ~/homelab-docs/{captures,refined,screenshots,progress,templates,scripts,achievements}
 
 # Clone this repository
-git clone git@github.com:yourusername/homelab-docs.git ~/homelab-docs
+git clone git@github.com:thedefval/homelab-docs-official.git ~/homelab-docs
 
 # Copy scripts to local bin
 cp ~/homelab-docs/scripts/*.sh ~/.local/bin/
