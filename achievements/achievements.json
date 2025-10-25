@@ -1,0 +1,125 @@
+{
+  "documentation": [
+    {
+      "id": "first_steps",
+      "name": "First Steps",
+      "icon": "🥉",
+      "description": "Create your first quick capture",
+      "requirement": "captures >= 1"
+    },
+    {
+      "id": "picture_perfect",
+      "name": "Picture Perfect",
+      "icon": "📸",
+      "description": "Add 50 screenshots",
+      "requirement": "screenshots >= 50"
+    },
+    {
+      "id": "troubleshooter",
+      "name": "Troubleshooter",
+      "icon": "🔧",
+      "description": "Document 20 failures and fixes",
+      "requirement": "troubleshooting_logs >= 20"
+    },
+    {
+      "id": "librarian",
+      "name": "Librarian",
+      "icon": "📚",
+      "description": "Create 25 reference documents",
+      "requirement": "references >= 25"
+    },
+    {
+      "id": "teacher",
+      "name": "Teacher",
+      "icon": "👨‍🏫",
+      "description": "Create 10 tutorial documents",
+      "requirement": "tutorials >= 10"
+    },
+    {
+      "id": "deep_diver",
+      "name": "Deep Diver",
+      "icon": "🧙",
+      "description": "Create 5 deep-dive documents",
+      "requirement": "deepdives >= 5"
+    }
+  ],
+  "consistency": [
+    {
+      "id": "hot_streak",
+      "name": "Hot Streak",
+      "icon": "🔥",
+      "description": "Maintain a 7-day streak",
+      "requirement": "streak >= 7",
+      "bonus_xp": 50
+    },
+    {
+      "id": "dedicated",
+      "name": "Dedicated",
+      "icon": "🌟",
+      "description": "Maintain a 30-day streak",
+      "requirement": "streak >= 30",
+      "bonus_xp": 150
+    },
+    {
+      "id": "legendary",
+      "name": "Legendary",
+      "icon": "💎",
+      "description": "Maintain a 100-day streak",
+      "requirement": "streak >= 100",
+      "bonus_xp": 500
+    }
+  ],
+  "certification": [
+    {
+      "id": "ccna_scholar",
+      "name": "CCNA Scholar",
+      "icon": "🎓",
+      "description": "Complete 25 CCNA captures",
+      "requirement": "ccna_captures >= 25"
+    },
+    {
+      "id": "ccie_candidate",
+      "name": "CCIE Candidate",
+      "icon": "🏆",
+      "description": "Complete 50 CCIE captures",
+      "requirement": "ccie_captures >= 50"
+    },
+    {
+      "id": "cloud_architect",
+      "name": "Cloud Architect",
+      "icon": "☁️",
+      "description": "Complete 30 AWS captures",
+      "requirement": "aws_captures >= 30"
+    },
+    {
+      "id": "ham_operator",
+      "name": "Ham Operator",
+      "icon": "📻",
+      "description": "Complete 20 Ham Radio captures",
+      "requirement": "hamradio_captures >= 20"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "level_5",
+      "name": "Expert",
+      "icon": "📈",
+      "description": "Reach Level 5",
+      "requirement": "level >= 5"
+    },
+    {
+      "id": "level_10",
+      "name": "Legendary Status",
+      "icon": "🚀",
+      "description": "Reach Level 10",
+      "requirement": "level >= 10"
+    },
+    {
+      "id": "centurion",
+      "name": "Centurion",
+      "icon": "💯",
+      "description": "Create 100 documents total",
+      "requirement": "total_documents >= 100"
+    }
+  ]
+}

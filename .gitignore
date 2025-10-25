@@ -1,0 +1,44 @@
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Secrets (if any)
+secrets/
+*.key
+*.pem
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# System files
+.directory
+desktop.ini
