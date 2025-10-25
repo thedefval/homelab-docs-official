@@ -1,8 +1,8 @@
-# 🏆 Gamified Homelab Documentation System
+# Gamified Homelab Documentation System
 
 A lightweight, git-based documentation system that makes capturing and refining technical content engaging through gamification, XP tracking, and achievement badges.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Quick Start](#quick-start)
@@ -16,7 +16,7 @@ A lightweight, git-based documentation system that makes capturing and refining 
 - [Screenshot Workflow](#screenshot-workflow)
 - [Troubleshooting](#troubleshooting)
 
-## 🎯 Overview
+## Overview
 
 This system supports your certification studies (CCNA, CCIE, AWS CSA Pro, Ham Radio General & Extra) and personal projects (Authentik, Wazuh, etc.) with:
 
@@ -27,7 +27,7 @@ This system supports your certification studies (CCNA, CCIE, AWS CSA Pro, Ham Ra
 - **Local-First**: All files stored locally, GitHub as backup
 - **Automated**: Git hooks automatically calculate XP and update stats
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone your repository
@@ -45,7 +45,7 @@ chmod +x scripts/install.sh
 cat progress/dashboard.md
 ```
 
-## 💻 System Requirements
+## System Requirements
 
 - **OS**: Linux (tested on CachyOS, works on most distributions)
 - **Required**:
@@ -56,7 +56,7 @@ cat progress/dashboard.md
   - Flameshot (screenshot tool with annotations)
   - GitHub account (for cloud backup)
 
-## 📦 Installation
+## Installation
 
 ### Method 1: Automated Installation (Recommended)
 
@@ -72,12 +72,12 @@ chmod +x install.sh
 ```
 
 The installer will:
-1. ✅ Verify system requirements
-2. ✅ Set up directory structure
-3. ✅ Install CLI tools to `~/.local/bin/`
-4. ✅ Configure Git hooks for automatic XP tracking
-5. ✅ Guide you through GitHub authentication setup
-6. ✅ Create initial progress tracking files
+1. Verify system requirements
+2. Set up directory structure
+3. Install CLI tools to `~/.local/bin/`
+4. Configure Git hooks for automatic XP tracking
+5. Guide you through GitHub authentication setup
+6. Create initial progress tracking files
 
 ### Method 2: Manual Installation
 
@@ -100,7 +100,7 @@ chmod +x ~/homelab-docs/.git/hooks/*
 cp ~/homelab-docs/templates/initial-* ~/homelab-docs/progress/
 ```
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 ~/homelab-docs/
@@ -142,7 +142,7 @@ cp ~/homelab-docs/templates/initial-* ~/homelab-docs/progress/
     └── achievements.json
 ```
 
-## 🔄 Daily Workflow
+## Daily Workflow
 
 ### Phase 1: Quick Capture (During Labs)
 
@@ -213,7 +213,7 @@ labprogress
 cat progress/dashboard.md
 ```
 
-## 🛠️ CLI Commands
+## CLI Commands
 
 ### `labquick [TRACK] [TITLE]`
 
@@ -270,7 +270,7 @@ labprogress
 # - Weekly/monthly stats
 ```
 
-## 🎮 XP System & Achievements
+## XP System & Achievements
 
 ### XP Values
 
@@ -323,7 +323,7 @@ Achievements are automatically unlocked and tracked in `progress/achievements.tx
 - 🚀 **Level 10**: Reach Legendary status
 - 💯 **Centurion**: Create 100 documents total
 
-## 🔐 GitHub Integration
+## GitHub Integration
 
 ### Why GitHub?
 
@@ -507,7 +507,7 @@ The routing table shows all routes:
 4. **Descriptive filenames**: Flameshot allows custom names
 5. **Organize daily**: Run `labscreen` after each session
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Git Push Fails
 
@@ -615,7 +615,7 @@ git log -1
 git status progress/
 ```
 
-## 📚 Additional Resources
+## Additional Resources
 
 ### Templates
 
@@ -641,16 +641,16 @@ All hooks are in `git-hooks/` directory:
 - `post-commit` - Runs after each commit to calculate XP
 - `pre-push` - Optional validation before push
 
-## 🤝 Contributing
+## Contributing
 
 This is a personal documentation system, but feel free to:
 - Fork the repository for your own use
 
-## 📄 License
+## License
 
 MIT License - Use this system however you want!
 
-## 🎯 Tips for Success
+## Tips for Success
 
 1. **Document immediately**: Capture during labs, not after
 2. **Be consistent**: Even 5 minutes daily builds momentum
@@ -662,4 +662,4 @@ MIT License - Use this system however you want!
 
 ---
 
-**Happy documenting! Level up your homelab and your career. 🚀**
+**Happy documenting! Level up your homelab and your career.**
